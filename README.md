@@ -19,6 +19,7 @@ mkdir website-profil
 
 #### Buat File index.html di website-utama
 #### Buat file index.html di dalam direktori website-utama dengan konten berikut:
+```bash
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +36,7 @@ mkdir website-profil
     <a href="/profil">Profil Saya</a>
 </body>
 </html>
-
+```
 
 #### Upload Foto Profil di website-profil
 Simpan foto profil dengan nama foto.jpg di dalam direktori website-profil.
