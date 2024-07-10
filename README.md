@@ -15,6 +15,7 @@ Website ini terdiri dari dua halaman: halaman utama dan halaman profil. Masing-m
 ```bash
 mkdir website-utama
 mkdir website-profil
+```
 
 #### Buat File index.html di website-utama
 #### Buat file index.html di dalam direktori website-utama dengan konten berikut:
@@ -34,3 +35,9 @@ mkdir website-profil
     <a href="/profil">Profil Saya</a>
 </body>
 </html>
+
+
+#### Upload Foto Profil di website-profil
+Simpan foto profil dengan nama foto.jpg di dalam direktori website-profil.
+
+
