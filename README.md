@@ -16,8 +16,8 @@ Website ini terdiri dari dua halaman: halaman utama dan halaman profil. Masing-m
 mkdir website-utama
 mkdir website-profil
 
-Buat File index.html di website-utama
-Buat file index.html di dalam direktori website-utama dengan konten berikut:
+#### Buat File index.html di website-utama
+#### Buat file index.html di dalam direktori website-utama dengan konten berikut:
 <!DOCTYPE html>
 <html lang="en">
 <head>
