@@ -33,7 +33,7 @@ mkdir website-profil
     <p>NIM: 215610053</p>
     <p>Program Studi: Sistem Informasi</p>
     <p>Hobi: Bulutangkis</p>
-    <a href="/profil">Profil Saya</a>
+    <a href="https://63981dca-ca6b-462a-adf7-a18649b3fd9e-10-244-5-47-8081.spch.r.killercoda.com/">Profil Saya</a>
 </body>
 </html>
 ```
