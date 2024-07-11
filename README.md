@@ -41,4 +41,57 @@ mkdir website-profil
 #### Upload Foto Profil di website-profil
 Simpan foto profil dengan nama foto.jpg di dalam direktori website-profil.
 
+#### Buat File index.html di website-profil
+Buat file index.html di dalam direktori website-profil dengan program berikut:
+```bash
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Profil</title>
+</head>
+<body>
+    <h1>Profil</h1>
+    <img src="foto.jpg" alt="Foto Profil" style="width:200px;height:200px;">
+</body>
+</html>
+```
+
+#### Buat Docker Network
+Buat jaringan Docker dengan nama my-dzikri-fandi-setiowibowo-network:
+```bash
+docker network create my-dzikri-fandi-setiowibowo-network
+```
+
+#### Dockerfile dan Image
+Dockerfile untuk Website-Utama dan website-profile
+Buat file Dockerfile di dalam direktori website-utama dengan konten berikut:
+```bash
+FROM nginx:latest
+COPY . /usr/share/nginx/html
+EXPOSE 80
+```
+#### Build Image
+Build Image untuk Website Utama
+Masuk ke direktori website-utama dan jalankan perintah berikut:
+```bash
+cd website-utama
+docker build -t website-utama .
+```
+Build Image untuk Website Profil
+Masuk ke direktori website-profil dan jalankan perintah berikut:
+```bash
+cd website-profil
+docker build -t website-profil .
+```
+
+#### Menjalankan Container
+Jalankan Container Website Utama
+```bash
+docker run -d --name website-utama --network my-dzikri-fandi-setiowibowo-network -p 8080:80 website-utama
+```
+Jalankan Container Website Profil
+```bash
+docker run -d --name website-profil --network my-dzikri-fandi-setiowibowo-network -p 8081:80 website-profil
 
